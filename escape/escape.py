@@ -3,7 +3,7 @@
 # Art by Rafael Pimenta
 # Typed in by PUT YOUR NAME HERE
 
-import time, random, math
+import time, random, math, pgzrun
 
 ###############
 ## VARIABLES ##
@@ -1363,3 +1363,5 @@ clock.schedule_unique(alarm, 10)
 # A higher number below gives a longer time limit.
 clock.schedule_interval(air_countdown, 5)
 sounds.mission.play() # Intro music
+
+pgzrun.go()
