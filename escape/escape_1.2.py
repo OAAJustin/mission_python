@@ -2,8 +2,8 @@ import pgzrun
 
 WIDTH = 800
 HEIGHT = 600
-player_x = 700
-player_y = 125
+player_x = 600
+player_y = 350
 
 
 def draw():
