@@ -1,3 +1,4 @@
+from multiprocessing.context import SpawnProcess
 import pgzrun
 
 WIDTH = 800
@@ -9,6 +10,12 @@ take_off_checklist = ["Put on suit",
                       "Seal hatch",
                       "Check cabin pressure",
                       "Fasten seatbelt"]
+
+spacewalk_checklist = ["Put on suit",
+                       "Check oxygen",
+                       "Seal helmet",
+                       "Test radio",
+                       "Open airlock"]
 
 def draw():
     screen.blit(images.backdrop, (0, 0))
@@ -33,7 +40,9 @@ clock.schedule_interval(game_loop, 0.03)
     
 
 
-
+for index in range(len(spacewalk_checklist)):
+    value = spacewalk_checklist[index]
+    print(index,value)
 
 
 
