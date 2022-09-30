@@ -6,10 +6,11 @@ player_x = 650
 player_y = 100
 
 take_off_checklist = ["Put on suit",
-                      "seal hatch", 
+                      "Seal hatch", 
                       "Check Cabin Pressure",
                       "Fasten seatbelt"]
 print(take_off_checklist)
+
 
 def draw():
     screen.blit(images.backdrop, (0, 0))
