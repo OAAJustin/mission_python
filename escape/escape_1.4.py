@@ -2,15 +2,15 @@ import pgzrun
 
 WIDTH = 800
 HEIGHT = 600
-player_x = 700
-player_y = 125
+player_x = 600
+player_y = 350
 
 
 def draw():
     screen.blit(images.backdrop, (0, 0))
     screen.blit(images.mars, (50, 50))
     screen.blit(images.astronaut, (player_x, player_y))
-    screen.blit(images.ship, (550,300))
+    screen.blit(images.ship, (550, 300))
     
 def game_loop():
     global player_x, player_y
@@ -24,5 +24,5 @@ def game_loop():
         player_y += 5
 
 clock.schedule_interval(game_loop, 0.03)
-
+    
 pgzrun.go()
