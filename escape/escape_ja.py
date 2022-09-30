@@ -5,6 +5,11 @@ HEIGHT = 600
 player_x = 700
 player_y = 125
 
+take_off_checklist = ["Put on suit", 
+                      "Seal hatch",
+                      "Check cabin pressure",
+                      "Fasten seatbelt"]
+
 def draw():
     screen.blit(images.backdrop, (0, 0))
     screen.blit(images.mars, (50, 50))
